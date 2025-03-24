@@ -1,0 +1,148 @@
+/* Frontend Public-facing Pages */
+
+li.xn-title {
+    padding-left: 10px;
+    padding-top: 15px;
+    font-size: 18px;
+}
+#slide-nav #slidemenu ul.nav li a,
+ul.frontend-nav li a {
+    text-transform: capitalize;
+}
+#slide-nav #slidemenu ul.nav li ul.dropdown-menu > li > a {
+    text-transform: capitalize;
+    line-height: 2;
+}
+/* Portal */
+.public-gallery-wrapper a.tile {
+    font-size: 22px;
+    display: table;
+    border: 0;
+    position: relative;
+    border-radius: 0;
+    vertical-align: middle;
+    overflow: hidden;
+    transition: background-color .4s;
+}
+.public-gallery-wrapper a.tile:hover {
+    transition: background-color 1.2s linear;
+}
+
+/* Shift up a little */
+.public-gallery-wrapper a.tile span {
+    display:table-cell;
+    vertical-align:middle;
+}
+.public-gallery-wrapper .tile.tile-danger:hover {
+    background: #FFFFFF;
+    color: #b64645;
+}
+
+a.tile:before {
+    box-sizing: border-box;
+    transform: translateX(100%);
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 99.5%;
+    height: 5px;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+a.tile:after {
+    box-sizing: border-box;
+    transform: translateX(-100%);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 99.5%;
+    height: 5px;
+    border-top: 4px solid transparent;
+    border-right: 4px solid transparent;
+}
+a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+a.tile.tile-danger:hover:before {
+    transition: transform .3s linear,
+                height .3s linear .3s;
+    transform: translateX(0);
+    height: 100%;
+    border-color: #823331; /* #B53533 */
+}
+a.tile.tile-danger:hover:after {
+    transition: transform .3s linear .6s,
+                height .3s linear .9s;
+    transform: translateX(2px);
+    height: 100%;
+    border-color: #823331;
+}
+
+.public-gallery-wrapper .tile.tile-primary:hover {
+    background: #FFFFFF;
+    color: #1b2436;
+}
+a.tile.tile-primary:hover:before {
+    transition: transform .3s linear,
+    height .3s linear .3s;
+    transform: translateX(0);
+    height: 100%;
+    border-color: #1b2436; /* #B53533 */
+}
+a.tile.tile-primary:hover:after {
+    transition: transform .3s linear .6s,
+    height .3s linear .9s;
+    transform: translateX(2px);
+    height: 100%;
+    border-color: #1b2436;
+}
+
+.public-gallery-wrapper .tile.tile-default:hover {
+    background: #656d78;
+    color: #FFFFFF;
+}
+a.tile.tile-default:hover:before {
+    transition: transform .3s linear,
+    height .3s linear .3s;
+    transform: translateX(0);
+    height: 100%;
+    border-color: #FFFFFF; /* #B53533 */
+}
+a.tile.tile-default:hover:after {
+    transition: transform .3s linear .6s,
+    height .3s linear .9s;
+    transform: translateX(2px);
+    height: 100%;
+    border-color: #FFFFFF;
+}
+.public-gallery-wrapper .tile.tile-success:hover {
+    background: #FFFFFF;
+    color: rgb(149, 183, 93);
+}
+a.tile.tile-success:hover:before {
+    transition: transform .3s linear,
+    height .3s linear .3s;
+    transform: translateX(0);
+    height: 100%;
+    border-color: rgb(149, 183, 93);
+}
+a.tile.tile-success:hover:after {
+    transition: transform .3s linear .6s,
+    height .3s linear .9s;
+    transform: translateX(2px);
+    height: 100%;
+    border-color: rgb(149, 183, 93);
+}
+
+.portal-wrapper .gallery:first-child {
+    margin-top: 20px;
+}
+
+
+/*
+[property] [duration] [timing-function] [delay];
+[transition-property] [transition-duration] [transition-timing-function] [transition-delay];
+*/

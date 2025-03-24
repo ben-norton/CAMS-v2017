@@ -1,0 +1,26 @@
+{
+  "name": "CAMS-v2017",
+  "description": "Collections Asset Manager version 2017",
+  "main": "",
+  "authors": [
+    "ben-norton <michaelnorton.ben@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/ben-norton/CAMS-v2017",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/vendor/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-fileinput": "^4.4.3",
+    "magnific-popup": "^1.1.0",
+    "popper.js": "^1.12.5",
+    "pdfjs-dist": "^2.14.305",
+    "bootstrap": "3.3.7"
+  }
+}
